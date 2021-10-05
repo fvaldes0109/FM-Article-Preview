@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url('./fonts/Manrope/Manrope-VariableFont_wght.ttf');
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+main {
+    background-color: white;
+    width: 900px;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#photo-drawers {
+    float: left;
+}
+
+#right-area {
+    width: 430px;
+    float: left;
+    padding: 30px 60px;
+}
+
+p, h1, span {
+    font-family: Manrope;
+}
+
+h1 {
+    font-size: 23px;
+    color: hsl(217, 19%, 35%);
+}
+
+#right-area > p {
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+    line-height: 1.5;
+    padding: 10px 10px 10px 0;
+    letter-spacing: 1px;
+}
+
+#profile {
+}
+
+#overlay {
+    display: none;
+}
+
+#pfp {
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+}
+
+#info {
+    float: left;
+    margin: 4px 15px;
+}
+
+#info > p {
+    font-size: 13px;
+}
+
+#name {
+    font-weight: 700;
+    color:hsl(217, 19%, 35%);
+}
+
+#date {
+    color:hsl(214, 17%, 51%);
+}
+
+#button-cont {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    margin: 7px 4px;
+}
+
+#button-cont img {
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
