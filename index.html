@@ -13,6 +13,7 @@
 
         <title>Frontend Mentor | Article preview component</title>
 
+		<link rel="stylesheet" href="style.css">
         <style>
             .attribution {
                 font-size: 11px;
@@ -24,19 +25,55 @@
         </style>
     </head>
     <body>
-        Shift the overall look and feel by adding these wonderful touches to
-        furniture in your home Ever been in a room and felt like something was
-        missing? Perhaps it felt slightly bare and uninviting. I’ve got some
-        simple tips to help you make any room feel complete. Michelle Appleton
-        28 Jun 2020 Share
-
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="https://www.linkedin.com/in/fernando-vald%C3%A9s-garc%C3%ADa-a46142221/">Fernando Valdés García</a>.
-        </div>
+		<main id="card">
+			<div id="photo">
+				<img alt="Drawer photo" src="./images/drawers.jpg" width="300" />
+			</div>
+			<div id="right-area">
+				<h1>Shift the overall look and feel by adding these wonderful touches to
+					furniture in your home
+				</h1>
+				<p>
+					Ever been in a room and felt like something was
+					missing? Perhaps it felt slightly bare and uninviting. I’ve got some
+					simple tips to help you make any room feel complete.
+				</p>
+				<div id="profile">
+					<div id="pfp">
+						<img alt="Profile photo" src="./images/avatar-michelle.jpg" width="44" />
+					</div>
+					<div id="info">
+						<p id="name">Michelle Appleton</p>
+						<p id="date">28 Jun 2020 Share</p>
+					</div>
+					<div id="share">
+						<div id="button-cont">
+							<img id="button" alt="Share Button" src="./images/icon-share.svg" />
+						</div>
+						<div id="overlay">
+							<div id="contents">
+								<span>SHARE</span>
+								<div id="icons">
+									<img id="fb-icon" alt="fb-icon" src="./images/icon-facebook.svg" />
+									<img id="tt-icon" alt="tt-icon" src="./images/icon-twitter.svg" />
+									<img id="ptr-icon" alt="ptr-icon" src="./images/icon-pinterest.svg" />
+								</div>
+							</div>
+							<div id="arrow"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://www.linkedin.com/in/fernando-vald%C3%A9s-garc%C3%ADa-a46142221/">Fernando Valdés García</a>.
+			</div>
+		</footer>
     </body>
 </html>
