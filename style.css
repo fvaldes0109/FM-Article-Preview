@@ -16,12 +16,14 @@ main {
     background-color: white;
     width: 900px;
     margin: 100px auto;
-    overflow: hidden;
     border-radius: 10px;
+    box-shadow: rgba(100, 100, 100, 0.03) 10px 20px 10px;
 }
 
 #photo-drawers {
     float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #right-area {
@@ -45,13 +47,6 @@ h1 {
     line-height: 1.5;
     padding: 10px 10px 10px 0;
     letter-spacing: 1px;
-}
-
-#profile {
-}
-
-#overlay {
-    display: none;
 }
 
 #pfp {
@@ -82,8 +77,12 @@ img {
     color:hsl(214, 17%, 51%);
 }
 
-#button-cont {
+#share {
+    position: relative;
     float: right;
+}
+
+#button-cont {
     width: 30px;
     height: 30px;
     background-color: hsl(210, 46%, 95%);
@@ -95,4 +94,62 @@ img {
     position: relative;
     top: 25%;
     left: 25%;
+}
+
+#button-cont:hover {
+    background-color: hsl(214, 17%, 51%)
+}
+
+#button-cont:hover img {
+    filter: brightness(0) invert(1);
+}
+
+#overlay {
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    top: -100%;
+    width: 210px;
+    padding: 10px;
+    border-radius: 10px;
+    left: -250%;
+    display: none;
+}
+
+#contents {
+    display: block;
+    width: 170px;
+    margin: 0px 25px;
+}
+
+#contents span {
+    float: left;
+    color: white;
+    font-size: 11px;
+    margin: 3px;
+    letter-spacing: 5px;
+}
+
+#icons {
+    float: left;
+    display: flex;
+}
+
+#icons img {
+    flex: 1;
+    margin: 0 7px;
+}
+
+#arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+    position: absolute;
+    bottom: -20%;
+    left: 42%;
+}
+
+.close {
+    clear: both;
 }
